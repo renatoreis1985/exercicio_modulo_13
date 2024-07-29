@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Castlevania</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">   
+
+
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1><a href="#inicio">Castlevania</a></h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-center w-100" id="menu">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item">
+                            <a href="#inicio" class="nav-link active">Ínicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#filmes-series" class="nav-link">Jogos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sobre" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contato" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="btn btn-warning d-none d-lg-block" type="button" id="btn-notificacoes">
+                    <i class="bi bi-bell"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio" class="p-0">
+            <div class="carousel carousel-fade slide" id="carousel-exemplo" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/10/symphony-of-the-night.jpg"
+                            alt="capa do jogo">
+                        <div class="carousel-caption">
+                            <h2>Castlevania Symphony of The Night</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/877/118/410/castlevania-castlevania-anime-castlevania-symphony-of-the-night-alucard-castle-hd-wallpaper-preview.jpg"
+                            alt="imagem do Alucard">
+                        <div class="carousel-caption">
+                            <h2>Alucard</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img src="https://cdn.mos.cms.futurecdn.net/e244109db148387b1677797f5e0f7ab9-1200-80.jpg"
+                            alt="capa do Drácula">
+                        <div class="carousel-caption">
+                            <h2>Drácula</h2>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#carousel-exemplo" data-bs-slide="prev"
+                    type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#carousel-exemplo" data-bs-slide="next"
+                    type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button class="active" data-bs-target="#carousel-exemplo" data-bs-slide-to="0"
+                        type="button"></button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide-to="1" type="button"></button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide-to="2" type="button"></button>
+                </div>
+            </div>
+        </section>
+        <section id="filmes-series">
+            <h2 class="mb-5">Jogos</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card">
+                        <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/03/castlevania-symphony-night-moviles-1883651.jpg?tf=3840x"
+                            alt="jogo castlevania symphony of the night">
+                        <div class="card-body">
+                            <h4 class="card-title">Castlevania: sinfonia da noite</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                            <li class="lista-de-botoes">
+                                <a href="#" id="botao-assistir" class="btn btn-primary">Conferir</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card">
+                        <img src="https://m.media-amazon.com/images/I/51Se1IXfTgL.jpg"
+                            alt="jogo castlevania order of eclesia">
+                        <div class="card-body">
+                            <h4 class="card-title">Castlevania: order of eclesia</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                            <li class="lista-de-botoes">
+                                <a href="#" id="botao-assistir" class="btn btn-primary">Conferir</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/6/61/Castlevania_dracula_x_wiiu.jpg"
+                            alt="jogo castlevania dracula x">
+                        <div class="card-body">
+                            <h4 class="card-title">Castlevania: Drácula X</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                            <li class="lista-de-botoes">
+                                <a href="#" id="botao-assistir" class="btn btn-primary">Conferir</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/14/2e/84/142e8423c722800452ee64faf2fa9615.jpg"
+                            alt="jogo super castlevania iv">
+                        <div class="card-body">
+                            <h4 class="card-title">Super Castlevania IV</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                            <li class="lista-de-botoes">
+                                <a href="#" id="botao-assistir" class="btn btn-primary">Conferir</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card">
+                        <img src="https://cdn.mos.cms.futurecdn.net/20ab1b9e7c1c4fd6d1f526a67fd2e04d.jpg"
+                            alt="jogo castlevania curse of darkness">
+                        <div class="card-body">
+                            <h4 class="card-title">Castlevania: Curse of Darkness</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                            <li class="lista-de-botoes">
+                                <a href="#" id="botao-assistir" class="btn btn-primary">Conferir</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card">
+                        <img src="https://assets1.ignimgs.com/2003/09/06/castlevanialoi_090503_04-592873.jpg"
+                            alt="jogo castlevania lament of innocence">
+                        <div class="card-body">
+                            <h4 class="card-title">Castlevania: Lament of Innocence</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                            <ul class="d-flex p-0">
+                                <li class="lista-de-botoes">
+                                    <a href="#" id="botao-assistir" class="btn btn-primary">Conferir</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <nav class="nav nav-tabs mt-3">
+                <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active">Castlevania: symphony of the
+                    night</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link">Castlevania: order of
+                    eclesia</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link">Castlevania: Drácula X</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba4" class="nav-link">Super Castlevania IV</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba5" class="nav-link">Castlevania: Curse of
+                    Darkness</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba6" class="nav-link">Castlevania: Lament of
+                    Innocence</button>
+                <div class="tab-content p-3">
+                    <div id="aba1" class="tab-pane active">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, inventore debitis cum
+                        accusantium architecto nobis. Dolores quaerat odio atque numquam nostrum rerum quae, cupiditate
+                        excepturi sint? Dolores maxime repellendus harum?
+                    </div>
+                    <div id="aba2" class="tab-pane">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo minima incidunt expedita possimus
+                        adipisci harum accusamus, ullam necessitatibus. Rerum aliquid repudiandae quis ab a. Sequi,
+                        aspernatur quis. Atque, voluptatibus tempore.
+                    </div>
+                    <div id="aba3" class="tab-pane">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur a, reprehenderit, odio
+                        consequatur libero ab iusto quis necessitatibus at cum exercitationem illum vitae temporibus
+                        natus fugit quos, dicta commodi distinctio?
+                    </div>
+                    <div id="aba4" class="tab-pane">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio eaque eum quos dolor
+                        architecto dignissimos a rem maiores. Vel odit totam repellat quisquam quas obcaecati molestias
+                        nobis itaque amet!
+                    </div>
+                    <div id="aba5" class="tab-pane">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam nihil est maiores molestias
+                        molestiae commodi minus tenetur doloremque asperiores error praesentium, at, quae explicabo
+                        quisquam excepturi rem adipisci quidem tempora?
+                    </div>
+                    <div id="aba6" class="tab-pane">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero corporis molestiae, quibusdam
+                        asperiores quos earum obcaecati iusto in nam? Sint voluptatibus quibusdam ratione porro quas
+                        minus inventore at ullam possimus.
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section id="Curiosidades">
+            <h2>Curiosidades</h2>
+            <div class="accordion mt-4">
+                <div class="accordion-item mb-1">
+                    <div class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta1">
+                            A franquia!
+                        </button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="resposta1">
+                        <div class="accordion-body">
+                            Castlevania é uma série de jogos eletrônicos do gênero plataforma e ação-aventura sombria
+                            desenvolvida e publicada pela empresa japonesa Konami. A série foi criada no Japão e seu
+                            título de estreia foi lançado em 26 de setembro de 1986 para o Famicom Disk System,
+                            intitulado Akumajō Dracula.
+                            A série é uma das mais famosas franquias de jogos desta empresa e uma das mais vendidas de
+                            todos os tempos, com seus títulos se tornando um ponto de referência na criação de jogos de
+                            plataforma e ação, originando o subgênero metroidvania. Além de receber vários spin-offs e
+                            conversões, a série se expandiu para outras mídias, incluindo comic books e uma série
+                            animada da Netflix. A versão Symphony of the Night, o mais aclamado título da série, figura
+                            em diversas listas de melhores jogos de todos os tempos, enquanto Super Castlevania IV e
+                            Aria of Sorrow são considerados como alguns dos melhores jogos de seus respectivos consoles.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-1">
+                    <div class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta2">
+                            5 melhores jogos da franquia!
+                        </button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="resposta2">
+                        <div class="accordion-body">
+                            Castlevania: Rondo of Blood (1993),
+                            Castlevania: Aria of Sorrow (2003),
+                            Castlevania: Dawn of Sorrow (2005),
+                            Castlevania: Circle of the Moon (2001),
+                            Castlevania: Symphony of the Night (1997).
+                        </div>
+                    </div>
+                </div>                
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <div class="row">
+                <div class="col-lg-6 col-sm-8">
+                    <form class="mt-5">
+                        <div class="mb-2">
+                            <label for="nome" class="form-label">Seu nome:</label>
+                            <input type="text" class="form-control" id="nome">
+                        </div>
+                        <div class="mb-2">
+                            <label for="email" class="form-label">Seu email:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-2">
+                            <label for="telefone" class="form-label">Seu telefone:</label>
+                            <input type="tel" class="form-control" id="telefone">                            
+
+                        </div>
+                        <div class="form-check form-switch m-2">
+                            <label for="checkbox" class="form-check-label">Li e concordo com todos os termos.</label>
+                            <input type="checkbox" class="form-check-input" id="checkbox">
+                            <div class="invalid-feedback">Você precisa concordar com os termos para enviar o formulário.
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    <button class="btn btn-primary d-none" type="button" data-bs-toggle="modal" data-bs-target="#exemplo-modal">
+
+    </button>
+    <div class="modal" id="exemplo-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <strong>Importante</strong>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur unde odio saepe rem similique
+                    nam amet dolores facere. Voluptatem assumenda nihil repudiandae quas ipsum voluptates possimus et
+                    amet doloremque quae.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Concordo</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div class="toast" id="mensagens">
+            <header class="toast-header">
+                <strong>Notificações</strong>
+            </header>
+            <div class="toast-body">
+                Você não possui notificações.
+                <div class="mt-2 pt-2 border-top">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="toast">
+                        Fechar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>
+            &copy; 2024 - Castlevania</a>
+        </p>
+    </footer>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
